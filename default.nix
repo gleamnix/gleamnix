@@ -15,7 +15,7 @@ rustPlatform.buildRustPackage rec {
 	owner = "gleamnix";
 	repo = pname;
 	rev = "main";
-	hash = "sha256-65NlEiXJbOp5/pF/Zmszdy2Zq+OX+4dnVQkyxwx0wRk=";
+	hash = "sha256-WPQTaYhpS6UBGTlQ6UlOHkKHVlWIF48sTQ0cJkzf5hY=";
     };
 
     nativeBuildInputs = [ makeWrapper git ];
