@@ -15,10 +15,11 @@
 	inherit pkgs;
 
 	git = pkgs.git;
-	erlang = pkgs.beam.interpreters.erlang_26;
+	erlang = pkgs.beam.interpreters.erlang_24;
 	makeWrapper = pkgs.makeWrapper;
 	fetchFromGithub = pkgs.fetchFromGitHub;
 	rustPlatform = pkgs.rustPlatform;
+	coreutils = pkgs.coreutils;
     });
   in
   {

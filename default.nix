@@ -4,7 +4,8 @@
     rustPlatform,
     makeWrapper,
     git,
-    erlang
+    erlang,
+    coreutils
 }:
 
 rustPlatform.buildRustPackage rec {
@@ -22,7 +23,7 @@ rustPlatform.buildRustPackage rec {
 
     postFixup = ''
 	wrapProgram $out/bin/gleam \
-	    --set PATH ${pkgs.lib.makeBinPath [ git erlang ]}
+	    --set PATH ${pkgs.lib.makeBinPath [ git erlang coreutils ]}
     '';
 
     doInstallCheck = false;
