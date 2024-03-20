@@ -20,6 +20,7 @@
 	fetchFromGithub = pkgs.fetchFromGitHub;
 	rustPlatform = pkgs.rustPlatform;
 	coreutils = pkgs.coreutils;
+	rebar3 = pkgs.rebar3;
     });
   in
   {
